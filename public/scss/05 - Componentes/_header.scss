@@ -1,0 +1,118 @@
+.header {
+  background: $dark-color;
+}
+
+.header .top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: em(15);
+}
+
+.header .bar-contatc ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: $gap-small 0;
+}
+
+.header .bar-contatc ul li {
+  padding-left: $gap-small;
+  color: $light-color;
+}
+
+.header .bar-contatc ul li a {
+  display: block;
+  padding-left: $gap-small;
+  color: $light-color;
+  transition: 0.3s ease;
+}
+
+.header .bar-contatc ul li:nth-child(3) .iconify {
+  width: 20px;
+  height: 20px;
+}
+
+.header .bar-contatc ul li a:hover {
+  color: $secondary-color-light;
+}
+
+.header .bar-contatc .iconify {
+  margin-right: $gap-smaller;
+  vertical-align: middle;
+}
+
+.header .login a {
+  margin-right: $gap-xlarger;
+  color: $light-color;
+  transition: 0.3s ease;
+}
+
+.header .login a:hover {
+  color: $secondary-color-light;
+}
+
+.header .nav {
+  background: $light-color;
+  @include box-shadow(0px 1px 12px -7px rgba(0, 0, 0, 0.54));
+}
+
+.header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  max-width: 35%;
+  padding: $gap-smaller;
+  @include device(desktop) {
+    max-width: 25%;
+    min-width: 130px;
+  }
+}
+
+.header .nav-menu ul {
+  display: flex;
+  @include device(mobile) {
+    display: none;
+  }
+}
+
+.header .nav-menu ul li a {
+  padding: 0 20px;
+  color: $dark-color;
+  font-weight: 600;
+}
+
+.header .form-header-search input {
+  padding: $gap-smaller 0 $gap-smaller $gap-medium;
+  border: 1px solid $secondary-color;
+  border-top-left-radius: $gap-medium;
+  border-bottom-left-radius: $gap-medium;
+  @include device(desktop) {
+    display: none;
+  }
+}
+
+.header .form-header-search .btn-search {
+  background: $secondary-color;
+  padding: $gap-smaller $gap-small;
+  border: 1px $secondary-color solid;
+  border-top-right-radius: $gap-medium;
+  border-bottom-right-radius: $gap-medium;
+  margin-left: -5px;
+  color: $light-color;
+  @include device(desktop) {
+    background: $bg-color;
+    border: 0;
+    color: $dark-color;
+    font-size: em(20);
+  }
+}
+
+.header .btn-cart {
+  color: $dark-color;
+  margin-right: 20px;
+}
