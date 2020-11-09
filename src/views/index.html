@@ -124,5 +124,13 @@
     </section>
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+ 
+    <script>
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('.nav')
+         nav.classList.toggle("stick-op", window.scrollY > 150)
+        nav.classList.toggle("stick", window.scrollY > 500)
+      })
+    </script>
   </body>
 </html>
