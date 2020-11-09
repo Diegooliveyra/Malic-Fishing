@@ -1,0 +1,142 @@
+.header {
+  background: $dark-color;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: em(15);
+  @include device(mobile) {
+    justify-content: center;
+    margin-bottom: $gap-small;
+  }
+}
+
+.bar-contatc ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: $gap-small 0;
+  @include device(mobile) {
+    padding-bottom: px;
+  }
+  & li {
+    padding-left: $gap-small;
+    color: $light-color;
+    @include device(mobile) {
+      padding-left: 0;
+    };
+   
+  }
+  & li a {
+    display: block;
+    padding-left: $gap-small;
+    color: $light-color;
+    transition: 0.3s ease;
+    @include device(mobile) {
+      justify-content: center;
+      line-height: $gap-medium;
+    }
+  };
+  @include device(mobile) {
+    justify-content: center;
+  }
+}
+
+.bar-contatc ul li:nth-child(3) .iconify {
+  width: 20px;
+  height: 20px;
+}
+
+.bar-contatc ul li a:hover {
+  color: $secondary-color-light;
+}
+
+.bar-contatc .iconify {
+  margin-right: $gap-smaller;
+  vertical-align: middle;
+}
+
+.login a {
+  margin-right: $gap-xlarger;
+  color: $light-color;
+  transition: 0.3s ease;
+  & a:hover {
+    color: $secondary-color-light;
+  };
+  @include device(mobile) {
+    margin-right:0;
+  }
+}
+
+.nav {
+  background: $light-color;
+  @include box-shadow(10px 1px 12px -7px rgb(0, 0, 0));
+
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(100px,190px) 50px;
+  padding: 20px 10px;
+  gap: 20px;
+  align-items: center;
+  //align-items: center;
+ // justify-content: space-between;
+}
+
+.logo {
+  max-width: 150px;
+  @include device(desktop) {
+    max-width: 25%;
+    min-width: 130px;
+  }
+}
+
+.nav-menu ul {
+  display: flex;
+  @include device(mobile) {
+    display: none;
+  }
+  & li a {
+    padding: 0 15px;
+    color: $dark-color;
+    font-weight: 600;
+  }
+}
+
+.form-header-search input {
+  width: 100%;
+  max-width: 150px;
+  padding: $gap-smaller 0 $gap-smaller $gap-small;
+  border: 1px solid $secondary-color;
+  border-top-left-radius: $gap-medium;
+  border-bottom-left-radius: $gap-medium;
+  @include device(desktop) {
+    display: none;
+  }
+}
+
+.form-header-search .btn-search {
+  background: $secondary-color;
+  padding: $gap-smaller $gap-small;
+  border: 1px $secondary-color solid;
+  border-top-right-radius: $gap-medium;
+  border-bottom-right-radius: $gap-medium;
+  margin-left: -5px;
+  color: $light-color;
+  @include device(desktop) {
+    background: $bg-color;
+    border: 0;
+    color: $dark-color;
+    font-size: em(20);
+    margin-left: 40px;
+  }
+}
+
+.btn-cart {
+  color: $dark-color;
+  margin-right: 20px;
+}
