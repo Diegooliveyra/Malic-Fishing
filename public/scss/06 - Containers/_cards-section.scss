@@ -5,9 +5,33 @@
   background-position: left center;
   padding: $gap-xlarger $gap-small;
   height: 600px;
- 
 }
 
 .cards-wrap {
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: $gap-medium $gap-medium;
+  margin-left: $gap-medium;
+  margin-top: $gap-medium;
+  max-width: 280px;
+  height: 320px;
+  background: $light-color;
+  text-align: center;
+  @include box-shadow(2px 4px 11px -1px rgba(0,0,0,0.20));
+  color: $paragrafh-color;
+  & h3 {
+    color: $secondary-color-light;
+    font-size: em(18);
+    font-weight: 700;
+    
+  }
 }

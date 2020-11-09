@@ -425,6 +425,47 @@ a {
 }
 
 .cards-wrap {
-  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.875em 1.875em;
+  margin-left: 1.875em;
+  margin-top: 1.875em;
+  max-width: 280px;
+  height: 320px;
+  background: #FFFFFF;
+  text-align: center;
+  -webkit-box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.2);
+  color: #7D7D7D;
+}
+
+.card h3 {
+  color: #34A5B3;
+  font-size: 1.125em;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
