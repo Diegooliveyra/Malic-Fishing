@@ -4,3 +4,21 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
+.sub-title-about {
+    font-size: em(18);
+    line-height: em(28,18);
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+    color: $secondary-color-light;
+    margin-bottom: $gap-small;
+}
+
+.title-about {
+    font-size: em(26);
+    line-height: em(40,26);
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    color: $dark-color;
+    margin-bottom: $gap-small;
+}

@@ -85,6 +85,24 @@ a {
   font-weight: 700;
 }
 
+.sub-title-about {
+  font-size: 1.125em;
+  line-height: 1.55556em;
+  font-weight: 400;
+  font-family: 'Montserrat',sans-serif;
+  color: #34A5B3;
+  margin-bottom: 0.9375em;
+}
+
+.title-about {
+  font-size: 1.625em;
+  line-height: 1.53846em;
+  font-weight: 500;
+  font-family: 'Montserrat',sans-serif;
+  color: #151515;
+  margin-bottom: 0.9375em;
+}
+
 .malic-btn {
   display: inline-block;
   height: 50px;
@@ -276,8 +294,8 @@ a {
 .stick-op {
   width: 100vw;
   opacity: 0;
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
+  -webkit-transition: .8s ease-out;
+  transition: .8s ease-out;
   z-index: 999;
 }
 
@@ -288,8 +306,6 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
 }
 
 .nav-bar {
@@ -441,7 +457,6 @@ a {
   background-repeat: no-repeat;
   background-position: left center;
   padding: 5em 0.9375em;
-  height: 600px;
 }
 
 .cards-wrap {
@@ -491,5 +506,60 @@ a {
 
 .card:nth-child(1) {
   margin-left: 0;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5em 0.9375em;
+}
+
+.about-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 49%;
+          flex: 1 0 49%;
+  color: #7D7D7D;
+}
+
+.about-content p {
+  margin-bottom: 0.9375em;
+}
+
+.about-content ul {
+  margin-bottom: 1.875em;
+}
+
+.about-content ul li {
+  padding: 0.625em 0;
+}
+
+.about-content .check {
+  color: #34A5B3;
+  margin: 0 0.625em 0-0.625em;
+  font-size: 0.875em;
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5%;
+          flex: 0 0 5%;
+}
+
+.about-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding: 1.875em 0;
+}
+
+.about-image img {
+  min-width: 400px;
 }
 /*# sourceMappingURL=main.css.map */

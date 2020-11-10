@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gap-larger $gap-small;
+}
+
+.about-content {
+  flex: 1 0 49%;
+  color: $paragrafh-color;
+  & p {
+    margin-bottom: $gap-small;
+  }; 
+  & ul {
+    margin-bottom: $gap-medium;
+  };
+  & ul li {
+    padding: $gap-smaller 0;
+
+  };
+  & .check{
+    color: $secondary-color-light;
+    margin: 0 $gap-smaller 0 -$gap-smaller;
+    font-size: em(14);
+    display: inline-block;
+    flex: 0 0 5%;
+  }
+}
+
+.about-image {
+  flex: 1 0 50%;
+  padding: $gap-medium 0;
+
+  & img {
+    min-width: 400px;
+  }
+}
+
+
+

@@ -80,7 +80,7 @@
 .stick-op {
   width: 100vw;
   opacity: 0;
-  transition: .5s ease-out;
+  transition: .8s ease-out;
   z-index: 999;
 }
 
@@ -91,7 +91,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  transition: .5s ease-out;
 }
 
 .nav-bar {
