@@ -78,14 +78,14 @@
 }
 
 .stick-op {
-  width: 100vw;
+  width: 100%;
   opacity: 0;
   transition: .8s ease-out;
   z-index: 999;
 }
 
 .stick {
-  width: 100vw;
+  width: 100%;
   opacity: 1;
   z-index: 999;
   position: fixed;

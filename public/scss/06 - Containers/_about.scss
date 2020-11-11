@@ -4,10 +4,17 @@
   justify-content: space-between;
   align-items: center;
   padding: $gap-larger $gap-small;
+  @include device(mobile){
+    justify-content: center;
+  }
 }
 
 .about-content {
   flex: 1 0 49%;
+  @include device(mobile){
+    flex: 1  0 100%;
+    order: 2;
+  }
   color: $paragrafh-color;
   & p {
     margin-bottom: $gap-small;
@@ -21,19 +28,22 @@
   };
   & .check{
     color: $secondary-color-light;
-    margin: 0 $gap-smaller 0 -$gap-smaller;
+    margin: 0 $gap-smaller 0 $gap-smaller;
     font-size: em(14);
     display: inline-block;
     flex: 0 0 5%;
-  }
+  };
+ 
+  
 }
 
 .about-image {
   flex: 1 0 50%;
   padding: $gap-medium 0;
-
-  & img {
-    min-width: 400px;
+  @include device(mobile){
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 

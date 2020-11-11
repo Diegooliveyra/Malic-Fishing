@@ -1,0 +1,69 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > p{
+    color: $paragrafh-color;
+    text-align: center;
+    max-width: 680px;
+    font-size: em(16);
+    line-height: em(26,16);
+    margin-top: $gap-small;
+  }
+}
+
+.services-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $gap-small;
+  margin-top: $gap-larger;
+}
+
+.card-flip{
+  position: relative;
+  width: 350px;
+  height: 220px;
+  transform-style: preserve-3d;
+}
+
+.card-flip .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: .5s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+}
+
+.card-flip .face.front {
+  background: #ff0;
+}
+
+.card-flip:hover .face.front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card-flip .face.back {
+  background: #3bc2ff;
+  color: #fff;
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card-flip:hover .face.back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.card-flip .face h2 {
+  font-size: em(20);
+  font-weight: 700;
+  color: $light-color;
+}
