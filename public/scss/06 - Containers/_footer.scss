@@ -1,0 +1,126 @@
+.footer {
+  background: #000 url(./../../public/assests/footer-area-bg.png);
+  background-size: cover;
+  background-position: left center;
+  padding: $gap-xlarger 0;
+  color: $light-color;
+  margin-top: $gap-medium;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 $gap-small;
+  gap: $gap-small;
+  @include device(mobile){
+    flex-direction: column;
+    max-width: 600px;
+  }
+}
+
+.footer-about {
+  flex: 0 0 25%;
+  & img {
+    margin-bottom: $gap-medium;
+  }
+  & p {
+    font-size: em(16);
+    line-height: em(24, 16);
+    margin-bottom: $gap-medium;
+  }
+  & .social-media {
+    display: flex;
+    gap: $gap-small;
+    & a {
+      width: 35px;
+      height: 35px;
+      border: 1px solid $light-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & .iconify {
+        color: $light-color;
+        font-size: 20px;
+      }
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  };
+  @include device(mobile){
+    margin-bottom: $gap-larger;;
+  }
+}
+
+.footer-contact {
+  flex: 0 0 20%;
+  & h2 {
+    font-size: em(20);
+    line-height: em(20, 30);
+    font-weight: 700;
+    margin-bottom: $gap-medium;
+  }
+  & ul li {
+    padding-bottom: $gap-medium;
+    margin-left: $gap-medium;
+  }
+  & ul li a {
+    color: $light-color;
+    position: relative;
+  }
+  & .iconify {
+    position: absolute;
+    top: 5px;
+    left: -35px;
+    color: $secondary-color;
+    font-size: 20px;
+  };
+  @include device(mobile){
+    margin-bottom: $gap-medium;;
+  }
+}
+
+.footer-twitter {
+  flex: 0 0 25%;
+  & h2 {
+    font-size: em(20);
+    line-height: em(20, 30);
+    font-weight: 700;
+    margin-bottom: $gap-medium;
+  }
+  & ul li {
+    padding-bottom: $gap-medium;
+    margin-left: $gap-medium;
+  }
+  & ul li a {
+    color: $light-color;
+    font-weight: 600;
+    position: relative;
+  }
+  & ul li span {
+    display: block;
+    margin-top: $gap-smaller;
+    opacity: 0.5;
+    font-size: em(15);
+    font-weight: 400;
+  }
+  & .iconify {
+    position: absolute;
+    top: 5px;
+    left: -35px;
+    color: $secondary-color;
+    font-size: 24px;
+  }
+}
+
+.footer-instagram {
+  flex: 0 0 10%;
+  & h2 {
+    font-size: em(20);
+    line-height: em(20, 30);
+    font-weight: 700;
+    margin-bottom: $gap-medium;
+  }
+}

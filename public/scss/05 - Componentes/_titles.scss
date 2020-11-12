@@ -3,6 +3,11 @@
   line-height: em(64, 50);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  @include device(mobile){
+    margin-top: $gap-small;
+    font-size: em(38);
+    line-height: em (54,36);
+  }
 }
 
 .sub-title-about {

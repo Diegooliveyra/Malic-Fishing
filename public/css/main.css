@@ -85,6 +85,14 @@ a {
   font-weight: 700;
 }
 
+@media screen and (max-width: 759px) {
+  .big-title {
+    margin-top: 0.9375em;
+    font-size: 2.375em;
+    line-height: em 54, 36;
+  }
+}
+
 .sub-title-about {
   font-size: 1.125em;
   line-height: 1.55556em;
@@ -432,7 +440,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1px;
-  padding: 5em 0.9375em;
+  padding: 2.5em 0.9375em;
 }
 
 @media screen and (max-width: 759px) {
@@ -484,7 +492,7 @@ a {
   background-size: initial;
   background-repeat: no-repeat;
   background-position: left center;
-  padding: 5em 0.9375em;
+  padding: 2.5em 0.9375em;
 }
 
 .cards-wrap {
@@ -499,6 +507,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0.9375em;
 }
 
 .card {
@@ -515,7 +524,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.875em 1.875em;
-  margin-left: 1.875em;
   margin-top: 1.875em;
   max-width: 280px;
   height: 320px;
@@ -632,6 +640,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2.5em 0;
 }
 
 .services > p {
@@ -655,14 +664,14 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0.9375em;
+  gap: 1.875em;
   margin-top: 2.5em;
 }
 
 .card-flip {
   position: relative;
-  width: 350px;
-  height: 220px;
+  width: 300px;
+  height: 250px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -686,14 +695,21 @@ a {
           align-items: center;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   -webkit-transform: perspective(500px) rotateY(0deg);
           transform: perspective(500px) rotateY(0deg);
 }
 
 .card-flip .face.front {
-  background: #ff0;
+  background: #151515;
+  overflow: hidden;
+}
+
+.card-flip .face.front img {
+  height: 100%;
+  position: relative;
+  opacity: 0.7;
 }
 
 .card-flip:hover .face.front {
@@ -702,10 +718,43 @@ a {
 }
 
 .card-flip .face.back {
-  background: #3bc2ff;
-  color: #fff;
+  background: #13788A;
+  color: #FFFFFF;
   -webkit-transform: perspective(500px) rotateY(180deg);
           transform: perspective(500px) rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.875em;
+  text-align: center;
+}
+
+.card-flip .face.back h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.9375em;
+}
+
+.card-flip .face.back p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 1.875em;
+}
+
+.card-flip .face.back a {
+  color: #FFFFFF;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.card-flip .face.back .iconify {
+  vertical-align: middle;
+  margin-left: 6px;
 }
 
 .card-flip:hover .face.back {
@@ -717,5 +766,182 @@ a {
   font-size: 1.25em;
   font-weight: 700;
   color: #FFFFFF;
+  position: absolute;
+}
+
+.footer {
+  background: #000 url(./../../public/assests/footer-area-bg.png);
+  background-size: cover;
+  background-position: left center;
+  padding: 5em 0;
+  color: #FFFFFF;
+  margin-top: 1.875em;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.9375em;
+  gap: 0.9375em;
+}
+
+@media screen and (max-width: 759px) {
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px;
+  }
+}
+
+.footer-about {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.footer-about img {
+  margin-bottom: 1.875em;
+}
+
+.footer-about p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.875em;
+}
+
+.footer-about .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.9375em;
+}
+
+.footer-about .social-media a {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-about .social-media a .iconify {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.footer-about .social-media a:hover {
+  background: #13788A;
+}
+
+@media screen and (max-width: 759px) {
+  .footer-about {
+    margin-bottom: 2.5em;
+  }
+}
+
+.footer-contact {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+.footer-contact h2 {
+  font-size: 1.25em;
+  line-height: 0.66667em;
+  font-weight: 700;
+  margin-bottom: 1.875em;
+}
+
+.footer-contact ul li {
+  padding-bottom: 1.875em;
+  margin-left: 1.875em;
+}
+
+.footer-contact ul li a {
+  color: #FFFFFF;
+  position: relative;
+}
+
+.footer-contact .iconify {
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  color: #13788A;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 759px) {
+  .footer-contact {
+    margin-bottom: 1.875em;
+  }
+}
+
+.footer-twitter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.footer-twitter h2 {
+  font-size: 1.25em;
+  line-height: 0.66667em;
+  font-weight: 700;
+  margin-bottom: 1.875em;
+}
+
+.footer-twitter ul li {
+  padding-bottom: 1.875em;
+  margin-left: 1.875em;
+}
+
+.footer-twitter ul li a {
+  color: #FFFFFF;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-twitter ul li span {
+  display: block;
+  margin-top: 0.625em;
+  opacity: 0.5;
+  font-size: 0.9375em;
+  font-weight: 400;
+}
+
+.footer-twitter .iconify {
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  color: #13788A;
+  font-size: 24px;
+}
+
+.footer-instagram {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+}
+
+.footer-instagram h2 {
+  font-size: 1.25em;
+  line-height: 0.66667em;
+  font-weight: 700;
+  margin-bottom: 1.875em;
 }
 /*# sourceMappingURL=main.css.map */

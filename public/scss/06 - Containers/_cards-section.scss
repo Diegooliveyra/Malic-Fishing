@@ -3,7 +3,7 @@
   background-size: initial;
   background-repeat: no-repeat;
   background-position: left center;
-  padding: $gap-xlarger $gap-small;
+  padding: $gap-larger $gap-small;
 }
 
 .cards-wrap {
@@ -11,6 +11,7 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  gap: $gap-small;
 }
 
 .card {
@@ -19,7 +20,6 @@
   justify-content: space-around;
   align-items: center;
   padding: $gap-medium $gap-medium;
-  margin-left: $gap-medium;
   margin-top: $gap-medium;
   max-width: 280px;
   height: 320px;

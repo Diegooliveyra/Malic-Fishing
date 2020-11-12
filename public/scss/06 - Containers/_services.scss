@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  & > p{
+  padding: $gap-larger 0;
+  & > p {
     color: $paragrafh-color;
     text-align: center;
     max-width: 680px;
     font-size: em(16);
-    line-height: em(26,16);
+    line-height: em(26, 16);
     margin-top: $gap-small;
   }
 }
@@ -18,34 +19,39 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: $gap-small;
+  gap: $gap-medium;
   margin-top: $gap-larger;
 }
 
-.card-flip{
+.card-flip {
   position: relative;
-  width: 350px;
-  height: 220px;
+  width: 300px;
+  height: 250px;
   transform-style: preserve-3d;
-}
-
-.card-flip .face {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-  transition: .5s ease-in-out;
-  transform: perspective(500px) rotateY(0deg);
+  & .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 0.5s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+  }
 }
 
 .card-flip .face.front {
-  background: #ff0;
+  background: $dark-color;
+  overflow: hidden;
+  & img {
+    height: 100%;
+    position: relative;
+    opacity: 0.7;
+  }
 }
 
 .card-flip:hover .face.front {
@@ -53,9 +59,33 @@
 }
 
 .card-flip .face.back {
-  background: #3bc2ff;
-  color: #fff;
+  background: $secondary-color;
+  color: $light-color;
   transform: perspective(500px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  padding: $gap-medium;
+  text-align: center;
+  & h3 {
+    font-size: em(20);
+    font-weight: 700;
+    color: $light-color;
+    margin-bottom: $gap-small;
+  };
+  & p {
+    font-size: em(16);
+    font-weight: 300;
+    margin-bottom: $gap-medium;
+  };
+  & a {
+    color: $light-color;
+    font-weight: 700;
+    display: inline-block;
+  };
+  & .iconify {
+    vertical-align: middle;
+    margin-left: 6px;;
+  }
 }
 
 .card-flip:hover .face.back {
@@ -66,4 +96,5 @@
   font-size: em(20);
   font-weight: 700;
   color: $light-color;
+  position: absolute;
 }
