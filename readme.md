@@ -1,7 +1,7 @@
 <p align='center'><img width='200' src="./.github-img/logo.png"></p>
 <h1 align='center'>Desafio Road to Dev Jr - Malic Fishing</h1>
 <p align='center'>
-<img src="https://img.shields.io/github/repo-size/Diegooliveyra/Malic-Fishing">
+<img src="https://img.shields.io/github/languages/code-size/Diegooliveyra/Malic-Fishing">
 <img src="https://img.shields.io/github/last-commit/Diegooliveyra/Malic-Fishing">
 <img src="https://img.shields.io/github/license/Diegooliveyra/Malic-Fishing">
 </p>
