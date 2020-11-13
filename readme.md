@@ -1,4 +1,4 @@
-<p align='center'><img width='200' src="./github.png"></p>
+<p align='center'><img width='200' src="./github-img.png"></p>
 <h1 align='center'>Desafio Road to Dev Jr - Malic Fishing</h1>
 <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Diegooliveyra/Malic-Fishing">
@@ -41,8 +41,7 @@ $ cd src/views
 # Execute o arquivo
 $ index.html
 
----
-```bash
+```
 
 <h3>🖼 Layout</h3>
 <img src="./.github/web-home.png">
