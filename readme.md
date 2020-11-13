@@ -38,10 +38,11 @@ $ git clone https://github.com/Diegooliveyra/Malic-Fishing.git
 # Acesse a pasta do projeto no prompt de comando
 $ cd src/views
 
-# Execute o aquivo
+# Execute o arquivo
 $ index.html
 
 ---
+```bash
 
 <h3>🖼 Layout</h3>
 <img src="./.github/web-home.png">
