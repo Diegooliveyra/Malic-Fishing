@@ -126,7 +126,7 @@ a {
 }
 
 .divisor-title::before {
-  content: url(./../../public/assests/wave-divider.png);
+  content: url(./../../public/assets/wave-divider.png);
   display: inline-block;
   position: absolute;
   top: 38px;
@@ -135,7 +135,7 @@ a {
 }
 
 .divisor-title::after {
-  content: url(./../../public/assests/wave-divider.png);
+  content: url(./../../public/assets/wave-divider.png);
   display: inline-block;
   position: absolute;
   top: 38px;
@@ -573,7 +573,7 @@ a {
 }
 
 .cards-section {
-  background-image: url("/public/assests/bg-image.png");
+  background-image: url("/public/assets/bg-image.png");
   background-size: initial;
   background-repeat: no-repeat;
   background-position: left center;
@@ -858,7 +858,7 @@ a {
 }
 
 .footer {
-  background: #000 url(./../../public/assests/footer-area-bg.png);
+  background: #000 url(./../../public/assets/footer-area-bg.png);
   background-size: cover;
   background-position: left center;
   padding: 5em 0;

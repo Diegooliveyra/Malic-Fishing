@@ -37,7 +37,7 @@
   color: $dark-color;
   position: relative;
   &::before {
-    content: url(./../../public/assests/wave-divider.png);
+    content: url(./../../public/assets/wave-divider.png);
     display: inline-block;
     position: absolute;
     top: 38px;
@@ -45,7 +45,7 @@
     height: 20px;
   };
   &::after {
-    content: url(./../../public/assests/wave-divider.png);
+    content: url(./../../public/assets/wave-divider.png);
     display: inline-block;
     position: absolute;
     top: 38px;
