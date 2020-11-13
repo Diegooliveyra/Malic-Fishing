@@ -1,5 +1,5 @@
-<p align='center'><img width='200' src="./.github/logo.png"></p>
-<h1 align='center'>NLW #2- Next Level Week 2</h1>
+<p align='center'><img width='200' src="./github.png"></p>
+<h1 align='center'>Desafio Road to Dev Jr - Malic Fishing</h1>
 <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Diegooliveyra/Malic-Fishing">
 <img src="https://img.shields.io/github/last-commit/Diegooliveyra/Malic-Fishing">
@@ -33,7 +33,7 @@
 ```bash
 
 # Clone o repositório
-$ git clone https://github.com/K-Schaeffer/NLW-2.git
+$ git clone https://github.com/Diegooliveyra/Malic-Fishing.git
 
 # Acesse a pasta do projeto no prompt de comando
 $ cd src/views
