@@ -1,4 +1,4 @@
-<p align='center'><img width='200' src="./github-img.png"></p>
+<p align='center'><img width='200' src="./.github-img/logo.png"></p>
 <h1 align='center'>Desafio Road to Dev Jr - Malic Fishing</h1>
 <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Diegooliveyra/Malic-Fishing">
@@ -44,7 +44,7 @@ $ index.html
 ```
 
 <h3>🖼 Layout</h3>
-<img src="./.github/web-home.png">
+<img src="./.github-img,layout.jpg">
 
 
 <h3>📝 Licença</h3>
