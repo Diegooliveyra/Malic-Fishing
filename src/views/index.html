@@ -1,80 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../public/css/main.css" />
-    <title>Malic - Fishing & Hunting Club</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="top-bar container">
-        <div class="bar-contatc">
-          <ul>
-            <li>FREE shipping over $50</li>
-            <li>
-              <a href="#"
-                ><span class="iconify" data-icon="fa-solid:phone-alt"></span
-                >1-888-345-6789</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><span
-                  class="iconify"
-                  data-icon="dashicons:email-alt"
-                  data-inline="false"
-                ></span
-                >contact@example.com</a
-              >
-            </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../public/css/main.css" />
+  <title>Malic - Fishing & Hunting Club</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="top-bar container">
+      <div class="bar-contatc">
+        <ul>
+          <li>FREE shipping over $50</li>
+          <li>
+            <a href="#"><span class="iconify" data-icon="fa-solid:phone-alt"></span>1-888-345-6789</a>
+          </li>
+          <li>
+            <a href="#"><span class="iconify" data-icon="dashicons:email-alt"
+                data-inline="false"></span>contact@example.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="login">
+        <a href="#">Log In / Register</a>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-bar container">
+        <div class="logo">
+          <img src="../../public/assests/logo.png" alt="Logo Malic" />
+        </div>
+        <div class="nav-menu">
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="login">
-          <a href="#">Log In / Register</a>
+
+        <form class="form-header-search" action="#">
+          <input type="text" placeholder="Search" />
+          <button class="btn-search">
+            <span class="iconify" data-icon="heroicons-solid:search" data-inline="false"></span>
+          </button>
+        </form>
+        <a class="btn-cart" href="#"><span class="iconify" data-icon="map:grocery-or-supermarket"
+            data-inline="false"></span></a>
+        <div class="menu-togle">
+          <a id="btn-menu"><span class="iconify" id="btn-menu" data-icon="dashicons:menu-alt3"
+              data-inline="false"></span></a>
         </div>
       </div>
-      <nav class="nav">
-        <div class="nav-bar container">
-          <div class="logo">
-            <img src="../../public/assests/logo.png" alt="Logo Malic" />
-          </div>
-          <div class="nav-menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+    </nav>
+  </header>
+  <section class="hero">
 
-          <form class="form-header-search" action="#">
-            <input type="text" placeholder="Search" />
-            <button class="btn-search">
-              <span
-                class="iconify"
-                data-icon="heroicons-solid:search"
-                data-inline="false"
-              ></span>
-            </button>
-          </form>
-          <a class="btn-cart" href="#"
-            ><span
-              class="iconify"
-              data-icon="map:grocery-or-supermarket"
-              data-inline="false"
-            ></span
-          ></a>
-        </div>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-slider container">
+    <div class="container">
+
+      <div class="hero-slider" data-js="slide">
         <div class="hero-content">
           <h1 class="big-title">
-            A thing of beauty is a joy forever for women
+            A bad day can be better with fishing time!
+          </h1>
+          <p>
+            Fishing is the activity of trying to catch fish. A fishing vessel is a boat
+            or ship used to catch fish in the sea.
+          </p>
+          <a class="malic-btn" href="#"> <span>Read more</span></a>
+        </div>
+        
+        <div class="hero-image" >
+          <img src="../../public/assests/heroslider-image-1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="hero-slider hidden" data-js="slide">
+
+        <div class="hero-content">
+          <h1 class="big-title">
+            A thing of beauty is a joy forever for one women.
           </h1>
           <p>
             The experience of beauty often involves an interpretation of some
@@ -82,248 +91,243 @@
           </p>
           <a class="malic-btn" href="#"> <span>Read more</span></a>
         </div>
-        <div class="hero-image">
-          <img src="../../public/assests/heroslider-image-1.png" alt="" />
+        
+       
+        <div class="hero-image" >
+          <img src="../../public/assests/heroslider-image-2.png" alt="" />
         </div>
       </div>
-    </section>
-    <section class="cards-section">
-      <div class="cards-wrap container">
-        <div class="card">
-          <img
-            src="../../public/assests/icon-feature-1.png"
-            alt="Ice Fishing"
-          />
-          <h3>Ice Fishing</h3>
-          <p>
-            Ice fishing is the practice of catching fish with lines and fish
-            hooks or spears through
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="../../public/assests/icon-feature-2.png"
-            alt="Fly Fishing"
-          />
-          <h3>Fly Fishing</h3>
-          <p>
-            Fly fishing can be thought of as a method of casting line rather
-            than lure.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="../../public/assests/icon-feature-3.png"
-            alt="Fishing Tips"
-          />
-          <h3>Fishing Tips</h3>
-          <p>
-            We use different types of tips for fishing in the pond, sea or ice.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="../../public/assests/icon-feature-4.png"
-            alt="Boat Fishing"
-          />
-          <h3>Boat Fishing</h3>
-          <p>
-            Boat fishing is fishing from a boat in easy sight of land and in
-            water.
-          </p>
-        </div>
+      
+    </div>
+  </section>
+  <section class="cards-section">
+    <div class="cards-wrap container">
+      <div class="card">
+        <img src="../../public/assests/icon-feature-1.png" alt="Ice Fishing" />
+        <h3>Ice Fishing</h3>
+        <p>
+          Ice fishing is the practice of catching fish with lines and fish
+          hooks or spears through
+        </p>
       </div>
-    </section>
+      <div class="card">
+        <img src="../../public/assests/icon-feature-2.png" alt="Fly Fishing" />
+        <h3>Fly Fishing</h3>
+        <p>
+          Fly fishing can be thought of as a method of casting line rather
+          than lure.
+        </p>
+      </div>
+      <div class="card">
+        <img src="../../public/assests/icon-feature-3.png" alt="Fishing Tips" />
+        <h3>Fishing Tips</h3>
+        <p>
+          We use different types of tips for fishing in the pond, sea or ice.
+        </p>
+      </div>
+      <div class="card">
+        <img src="../../public/assests/icon-feature-4.png" alt="Boat Fishing" />
+        <h3>Boat Fishing</h3>
+        <p>
+          Boat fishing is fishing from a boat in easy sight of land and in
+          water.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="about container">
-      <div class="about-content">
-        <h3 class="sub-title-about">About</h3>
-        <h2 class="title-about">
-          Fishing techniques are methods for catching fish
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
-          convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi
-          at velit imperdiet sollicitudin sed vel risus. It is a long
-          established fact that a reader will be distracted.
-        </p>
-        <p>
-          Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla
-          eumiat velit imperdiet sollicitudin sed vel risus.
-        </p>
+  <section class="about container" id="about">
+    <div class="about-content">
+      <h3 class="sub-title-about">About</h3>
+      <h2 class="title-about">
+        Fishing techniques are methods for catching fish
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
+        convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla eu mi
+        at velit imperdiet sollicitudin sed vel risus. It is a long
+        established fact that a reader will be distracted.
+      </p>
+      <p>
+        Cras a convallis nisl, at aliquam dolor. Morbi in iaculis nunc. Nulla
+        eumiat velit imperdiet sollicitudin sed vel risus.
+      </p>
+      <ul>
+        <li>
+          <span class="iconify check" data-icon="feather:check-circle" data-inline="false"></span>
+          One of the reasons why people use Lorem Ipsum is because it adjusts
+          very well in every ocasion.
+        </li>
+        <li>
+          <span class="iconify check" data-icon="feather:check-circle" data-inline="false"></span>
+          Quisque eleifend lorem ipsum, et tempus nulla convallis nec.
+        </li>
+        <li>
+          <span class="iconify check" data-icon="feather:check-circle" data-inline="false"></span>
+          Suspendisse tempus consequat odio, quis tempus augue vulputate at.
+        </li>
+      </ul>
+      <a class="malic-btn" href="#"> <span>Read more</span></a>
+    </div>
+    <div class="about-image">
+      <img src="./../../public/assests/about-image.png" alt="Pescador" />
+    </div>
+  </section>
+
+  <section class="services container" id="services">
+    <h2 class="divisor-title">Our Services</h2>
+    <img src="./../../public/assests/icon-divider-img.png" alt="icon fish" />
+    <p>
+      Lorem Ipsum is a latin placeholder text commonly used to fulfill certain
+      areas of your website or app where content is not the main concern of
+      the developer.
+    </p>
+
+    <div class="services-wrap">
+      <div class="card-flip">
+        <div class="face front">
+          <img src="./../../public/assests/services-1.jpg" alt="serices-img">
+          <h2>Fishing Competitions</h2>
+        </div>
+        <div class="face back">
+          <h3>Fishing Competitions</h3>
+          <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly
+            to match local conditions.</p>
+          <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined"
+              data-inline="false"></span></a>
+        </div>
+      </div>
+      <div class="card-flip">
+        <div class="face front">
+          <img src="./../../public/assests/services-2.jpg" alt="serices-img">
+          <h2>Fishing Equipments</h2>
+        </div>
+        <div class="face back">
+          <h3>Fishing Equipments</h3>
+          <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly
+            to match local conditions.</p>
+          <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined"
+              data-inline="false"></span></a>
+        </div>
+      </div>
+      <div class="card-flip">
+        <div class="face front">
+          <img src="./../../public/assests/services-3.jpg" alt="serices-img">
+          <h2>Fishing Guidence</h2>
+        </div>
+        <div class="face back">
+          <h3>Fishing Guidence</h3>
+          <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly
+            to match local conditions.</p>
+          <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined"
+              data-inline="false"></span></a>
+        </div>
+      </div>
+      <div class="card-flip">
+        <div class="face front">
+          <img src="./../../public/assests/services-4.jpg" alt="serices-img">
+          <h2>Fishing Tour</h2>
+        </div>
+        <div class="face back">
+          <h3>Fishing Tour</h3>
+          <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly
+            to match local conditions.</p>
+          <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined"
+              data-inline="false"></span></a>
+        </div>
+      </div>
+      <div class="card-flip">
+        <div class="face front">
+          <img src="./../../public/assests/services-5.jpg" alt="serices-img">
+          <h2>Fishing Deals</h2>
+        </div>
+        <div class="face back">
+          <h3>Fishing Deals</h3>
+          <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly
+            to match local conditions.</p>
+          <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined"
+              data-inline="false"></span></a>
+        </div>
+      </div>
+      <div class="card-flip">
+        <div class="face front">
+          <img src="./../../public/assests/services-6.jpg" alt="serices-img">
+          <h2>Fishing Boats</h2>
+        </div>
+        <div class="face back">
+          <h3>Fishing Boats</h3>
+          <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly
+            to match local conditions.</p>
+          <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined"
+              data-inline="false"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-wrap container">
+      <div class="footer-about">
+        <img src="./../../public/assests/logo-white.png" alt="Logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis orci ac odio dictum tincidunt.
+          Donec ut metus leo auctor id faucibus.</p>
+        <div class="social-media">
+          <a href="#"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a>
+          <a href="#"><span class="iconify" data-icon="fe:instagram" data-inline="false"></span></a>
+          <a href="#"><span class="iconify" data-icon="ant-design:skype-outlined" data-inline="false"></span></a>
+          <a href="#"><span class="iconify" data-icon="bx:bxl-pinterest-alt" data-inline="false"></span></a>
+        </div>
+      </div>
+      <div class="footer-contact" id="contact">
+        <h2>Contact Us</h2>
         <ul>
           <li>
-            <span
-              class="iconify check"
-              data-icon="feather:check-circle"
-              data-inline="false"
-            ></span>
-            One of the reasons why people use Lorem Ipsum is because it adjusts
-            very well in every ocasion.
+            <p><a href="#"><span class="iconify" data-icon="carbon:phone" data-inline="false"></span>1 (800) 915
+                6270</a></p>
+            <p><a href="#">1 (800) 915 6271</a></p>
           </li>
           <li>
-            <span
-              class="iconify check"
-              data-icon="feather:check-circle"
-              data-inline="false"
-            ></span>
-            Quisque eleifend lorem ipsum, et tempus nulla convallis nec.
+            <p><a href="#"><span class="iconify" data-icon="dashicons:email-alt"
+                  data-inline="false"></span>support@malicfishing.com</a></p>
+            <p><a href="#">Skype: malicfishing</a></p>
           </li>
           <li>
-            <span
-              class="iconify check"
-              data-icon="feather:check-circle"
-              data-inline="false"
-            ></span>
-            Suspendisse tempus consequat odio, quis tempus augue vulputate at.
+            <p><a><span class="iconify" data-icon="cil:location-pin" data-inline="false"></span>Avenue Papineau
+                Montreal, QC, Canada</a></p>2726 </p>
           </li>
         </ul>
-        <a class="malic-btn" href="#"> <span>Read more</span></a>
       </div>
-      <div class="about-image">
-        <img src="./../../public/assests/about-image.png" alt="Pescador" />
+      <div class="footer-twitter">
+        <h2>Twitter</h2>
+        <ul>
+          <li>
+            <h4><a href="#"><span class="iconify" data-icon="uil:twitter-alt" data-inline="false"></span>A fishing
+                vessel is a boat or ship used to catch fish in the sea.</a></h4>
+            <span>3 hours ago</span>
+          </li>
+          <li>
+            <h4><a href="#"><span class="iconify" data-icon="uil:twitter-alt" data-inline="false"></span>A fishing
+                vessel is a boat or ship used to catch fish in the sea.</a></h4>
+            <span>5 hours ago</span>
+          </li>
+        </ul>
       </div>
-    </section>
+      <div class="footer-instagram">
+        <h2>Instagram</h2>
 
-    <section class="services container">
-      <h2 class="divisor-title">Our Services</h2>
-      <img src="./../../public/assests/icon-divider-img.png" alt="icon fish" />
-      <p>
-        Lorem Ipsum is a latin placeholder text commonly used to fulfill certain
-        areas of your website or app where content is not the main concern of
-        the developer.
-      </p>
-
-      <div class="services-wrap">
-        <div class="card-flip">
-          <div class="face front">
-            <img src="./../../public/assests/services-1.jpg" alt="serices-img">
-            <h2>Fishing Competitions</h2>
-          </div>
-          <div class="face back">
-            <h3>Fishing Competitions</h3>
-            <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly to match local conditions.</p>
-            <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span></a>
-          </div>
-        </div>
-        <div class="card-flip">
-          <div class="face front">
-            <img src="./../../public/assests/services-2.jpg" alt="serices-img">
-            <h2>Fishing Equipments</h2>
-          </div>
-          <div class="face back">
-            <h3>Fishing Equipments</h3>
-            <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly to match local conditions.</p>
-            <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span></a>
-          </div>
-        </div>
-        <div class="card-flip">
-          <div class="face front">
-            <img src="./../../public/assests/services-3.jpg" alt="serices-img">
-            <h2>Fishing Guidence</h2>
-          </div>
-          <div class="face back">
-            <h3>Fishing Guidence</h3>
-            <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly to match local conditions.</p>
-            <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span></a>
-          </div>
-        </div>
-        <div class="card-flip">
-          <div class="face front">
-            <img src="./../../public/assests/services-4.jpg" alt="serices-img">
-            <h2>Fishing Tour</h2>
-          </div>
-          <div class="face back">
-            <h3>Fishing Tour</h3>
-            <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly to match local conditions.</p>
-            <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span></a>
-          </div>
-        </div>
-        <div class="card-flip">
-          <div class="face front">
-            <img src="./../../public/assests/services-5.jpg" alt="serices-img">
-            <h2>Fishing Deals</h2>
-          </div>
-          <div class="face back">
-            <h3>Fishing Deals</h3>
-            <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly to match local conditions.</p>
-            <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span></a>
-          </div>
-        </div>
-        <div class="card-flip">
-          <div class="face front">
-            <img src="./../../public/assests/services-6.jpg" alt="serices-img">
-            <h2>Fishing Boats</h2>
-          </div>
-          <div class="face back">
-            <h3>Fishing Boats</h3>
-            <p>A fishing vessel is a boat or ship used to catch fish in the sea. Fishing boats vary widely in style partly to match local conditions.</p>
-            <a href="#">Read More<span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span></a>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer class="footer">
-      <div class="footer-wrap container">
-        <div class="footer-about">
-          <img src="./../../public/assests/logo-white.png" alt="Logo">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis orci ac odio dictum tincidunt. Donec ut metus leo auctor id faucibus.</p>
-          <div class="social-media">
-            <a href="#"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a>
-            <a href="#"><span class="iconify" data-icon="fe:instagram" data-inline="false"></span></a>
-            <a href="#"><span class="iconify" data-icon="ant-design:skype-outlined" data-inline="false"></span></a>
-            <a href="#"><span class="iconify" data-icon="bx:bxl-pinterest-alt" data-inline="false"></span></a>
-          </div>
-        </div>
-        <div class="footer-contact">
-          <h2>Contact Us</h2>
-          <ul>
-            <li>
-              <p><a href="#"><span class="iconify" data-icon="carbon:phone" data-inline="false"></span>1 (800) 915 6270</a></p>
-              <p><a href="#">1 (800) 915 6271</a></p>
-            </li>
-            <li>
-              <p><a href="#"><span
-                class="iconify"
-                data-icon="dashicons:email-alt"
-                data-inline="false"
-              ></span
-              >support@malicfishing.com</a></p>
-              <p><a href="#">Skype: malicfishing</a></p>
-            </li>
-            <li>
-              <p><a><span class="iconify" data-icon="cil:location-pin" data-inline="false"></span>Avenue Papineau Montreal, QC, Canada</a></p>2726 </p>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-twitter">
-          <h2>Twitter</h2>
-          <ul>
-            <li>
-              <h4><a href="#"><span class="iconify" data-icon="uil:twitter-alt" data-inline="false"></span>A fishing vessel is a boat or ship used to catch fish in the sea.</a></h4>
-              <span>3 hours ago</span>
-            </li>
-            <li>
-              <h4><a href="#"><span class="iconify" data-icon="uil:twitter-alt" data-inline="false"></span>A fishing vessel is a boat or ship used to catch fish in the sea.</a></h4>
-              <span>5 hours ago</span>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-instagram">
-          <h2>Instagram</h2>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="../../public/scripts/main.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".nav");
+      nav.classList.toggle("stick-op", window.scrollY > 150);
+      nav.classList.toggle("stick", window.scrollY > 500);
+    });
+  </script>
+</body>
 
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script>
-      window.addEventListener("scroll", function () {
-        const nav = document.querySelector(".nav");
-        nav.classList.toggle("stick-op", window.scrollY > 150);
-        nav.classList.toggle("stick", window.scrollY > 500);
-      });
-    </script>
-  </body>
 </html>

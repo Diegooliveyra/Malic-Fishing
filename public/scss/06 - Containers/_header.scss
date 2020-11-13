@@ -10,6 +10,7 @@
   justify-content: space-between;
   font-size: em(15);
   @include device(mobile) {
+    display: none;
     justify-content: center;
     margin-bottom: $gap-small;
   }
@@ -28,8 +29,7 @@
     color: $light-color;
     @include device(mobile) {
       padding-left: 0;
-    };
-   
+    }
   }
   & li a {
     display: block;
@@ -40,7 +40,7 @@
       justify-content: center;
       line-height: $gap-medium;
     }
-  };
+  }
   @include device(mobile) {
     justify-content: center;
   }
@@ -66,9 +66,9 @@
   transition: 0.3s ease;
   & a:hover {
     color: $secondary-color-light;
-  };
+  }
   @include device(mobile) {
-    margin-right:0;
+    margin-right: 0;
   }
 }
 
@@ -80,7 +80,7 @@
 .stick-op {
   width: 100%;
   opacity: 0;
-  transition: .8s ease-out;
+  transition: 0.8s ease-out;
   z-index: 999;
 }
 
@@ -95,10 +95,15 @@
 
 .nav-bar {
   display: grid;
-  grid-template-columns: 1fr 1fr minmax(100px,190px) 50px;
+  grid-template-columns: 1fr 1fr minmax(100px, 190px) 25px 25px;
   padding: 20px 10px;
   gap: 20px;
   align-items: center;
+  position: relative;
+  @include device(mobile) {
+    gap: 5px;
+    grid-template-columns: minmax(50px, 100px) 1fr minmax(50px, 100px) 50px 50px;
+  }
 }
 
 .logo {
@@ -112,12 +117,39 @@
 .nav-menu ul {
   display: flex;
   @include device(mobile) {
-    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    left: -100%;
+    transition: 0.5s;
+    background: $secondary-color;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   & li a {
     padding: 0 15px;
     color: $dark-color;
     font-weight: 600;
+    transition: 0.5s;
+    @include device(mobile) {
+      display: block;
+      padding: 15px;
+      font-size: 2em;
+      &:hover {
+        color: $light-color;
+      }
+    };
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+.nav-menu .active {
+  @include device(mobile) {
+    left: 0;
   }
 }
 
@@ -128,8 +160,10 @@
   border: 1px solid $secondary-color;
   border-top-left-radius: $gap-medium;
   border-bottom-left-radius: $gap-medium;
+  outline: none;
   @include device(desktop) {
     display: none;
+    max-width: 50px;
   }
 }
 
@@ -152,5 +186,23 @@
 
 .btn-cart {
   color: $dark-color;
-  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.menu-togle {
+  z-index: 999;
+  margin-left: 10px;
+  & a {
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+    @include device(mobile) {
+      display: block;
+      z-index: 1090;
+    }
+  }
+}
+
+.noscrol {
+  overflow: hidden;
 }

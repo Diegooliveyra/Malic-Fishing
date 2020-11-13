@@ -1,37 +1,44 @@
 .hero {
-    background-color: $bg-color;
+  background-color: $bg-color;
 }
 
 .hero-slider {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1px;
+    overflow: hidden;
     padding: $gap-larger $gap-small;
     @include device(mobile) {
-        flex-direction: column;;
-      }
-}
+      flex-direction: column;
+    }
+  }
 
 .hero-content {
-    flex: 0 0 50%;
-    & p {
-        font-size: em(20);
-        color: $dark-color;
-        margin: $gap-larger 0;
-        max-width: 600px;
-    };
-    @include device(mobile) {
-        order: 2;
-      }
+  flex: 0 0 50%;
+  & p {
+    font-size: em(20);
+    color: $dark-color;
+    margin: $gap-larger 0;
+    max-width: 600px;
+  }
+  @include device(mobile) {
+    order: 2;
+  }
 }
 
 .hero-image {
-    flex: 0 0 50%;
-    min-width: 50%;
-    margin-right: $gap-larger;
-    @include device(mobile) {
-        margin-right: 0;
-      }
-    
+  flex: 0 0 50%;
+  min-width: 50%;
+  margin-right: $gap-larger;
+
+  @include device(mobile) {
+    margin-right: 0;
+  }
+}
+
+
+.hidden {
+  display: none;
 }

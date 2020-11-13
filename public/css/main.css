@@ -57,6 +57,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Hind','open Sans';
   color: #151515;
@@ -229,6 +233,7 @@ a {
 
 @media screen and (max-width: 759px) {
   .top-bar {
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -330,8 +335,8 @@ a {
 .stick-op {
   width: 100%;
   opacity: 0;
-  -webkit-transition: .8s ease-out;
-  transition: .8s ease-out;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
   z-index: 999;
 }
 
@@ -347,13 +352,22 @@ a {
 .nav-bar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr minmax(100px, 190px) 50px;
-      grid-template-columns: 1fr 1fr minmax(100px, 190px) 50px;
+  -ms-grid-columns: 1fr 1fr minmax(100px, 190px) 25px 25px;
+      grid-template-columns: 1fr 1fr minmax(100px, 190px) 25px 25px;
   padding: 20px 10px;
   gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 759px) {
+  .nav-bar {
+    gap: 5px;
+    -ms-grid-columns: minmax(50px, 100px) 1fr minmax(50px, 100px) 50px 50px;
+        grid-template-columns: minmax(50px, 100px) 1fr minmax(50px, 100px) 50px 50px;
+  }
 }
 
 .logo {
@@ -375,7 +389,25 @@ a {
 
 @media screen and (max-width: 759px) {
   .nav-menu ul {
-    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    left: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #13788A;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -383,6 +415,29 @@ a {
   padding: 0 15px;
   color: #151515;
   font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 759px) {
+  .nav-menu ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 2em;
+  }
+  .nav-menu ul li a:hover {
+    color: #FFFFFF;
+  }
+}
+
+.nav-menu ul li a:hover {
+  color: #13788A;
+}
+
+@media screen and (max-width: 759px) {
+  .nav-menu .active {
+    left: 0;
+  }
 }
 
 .form-header-search input {
@@ -392,11 +447,13 @@ a {
   border: 1px solid #13788A;
   border-top-left-radius: 1.875em;
   border-bottom-left-radius: 1.875em;
+  outline: none;
 }
 
 @media screen and (max-width: 1100px) {
   .form-header-search input {
     display: none;
+    max-width: 50px;
   }
 }
 
@@ -422,7 +479,29 @@ a {
 
 .btn-cart {
   color: #151515;
-  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.menu-togle {
+  z-index: 999;
+  margin-left: 10px;
+}
+
+.menu-togle a {
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+}
+
+@media screen and (max-width: 759px) {
+  .menu-togle a {
+    display: block;
+    z-index: 1090;
+  }
+}
+
+.noscrol {
+  overflow: hidden;
 }
 
 .hero {
@@ -430,6 +509,7 @@ a {
 }
 
 .hero-slider {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,6 +520,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1px;
+  overflow: hidden;
   padding: 2.5em 0.9375em;
 }
 
@@ -487,6 +568,10 @@ a {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .cards-section {
   background-image: url("/public/assests/bg-image.png");
   background-size: initial;
@@ -532,6 +617,8 @@ a {
   -webkit-box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 4px 11px -1px rgba(0, 0, 0, 0.2);
   color: #7D7D7D;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .card h3 {
@@ -540,8 +627,9 @@ a {
   font-weight: 700;
 }
 
-.card:nth-child(1) {
-  margin-left: 0;
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .about {
@@ -838,6 +926,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer-about .social-media a .iconify {

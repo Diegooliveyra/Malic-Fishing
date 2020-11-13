@@ -27,13 +27,14 @@
   text-align: center;
   @include box-shadow(2px 4px 11px -1px rgba(0,0,0,0.20));
   color: $paragrafh-color;
+  transition: .5s ease;
   & h3 {
     color: $secondary-color-light;
     font-size: em(18);
     font-weight: 700;
     
   };
-  &:nth-child(1) {
-    margin-left: 0;
+  &:hover {
+    transform: scale(1.05);
   }
 }
